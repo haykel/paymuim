@@ -1,0 +1,101 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+#components-layout-demo-fixed-sider .logo {
+  height: 32px;
+  margin: 16px;
+  background: rgba(255, 255, 255, 0.2);
+}
+.site-layout .site-layout-background {
+  background: #fff;
+}
+.site-page-header{
+  background: #282828;
+}
+.site-page-header-layout{
+  background: #ebaf3d;
+  margin: 0px;
+  height: 80px;
+}
+.ant-layout-content{
+  margin: 0px !important;
+}
+.ant-layout {
+  background: #fff;
+}
+.ant-layout-content{
+  margin: 0px;
+}
+.ant-layout-header{
+  height: 0px;
+}
+.logo{
+  color: white;
+    font-size: 26px;
+    font-weight: bolder;
+    text-align: center;
+    padding: 20px 0px 20px 0px;
+    background-color: #363d45;
+}
+
+.ant-divider-dashed {
+  background: none;
+  border-color: #49515e;
+  border-style: double;
+  border-width: 1.5px 0 0;
+}
+.ant-layout-sider-children {
+  height: 100%;
+  margin-top: -0.1px;
+  padding-top: 0.1px;
+  background-color: #3e4750;
+}
+.ant-menu.ant-menu-dark, .ant-menu-dark .ant-menu-sub, .ant-menu.ant-menu-dark .ant-menu-sub {
+  color: rgba(255, 255, 255, 0.65);
+  background:none;
+}
+.ant-btn-background-ghost.ant-btn-primary {
+  color: #9fc1ca;
+    background: transparent;
+    border-color: #9fc1ca;
+    text-shadow: none;
+    border-radius: 5px;
+    font-size: 13px;
+}
