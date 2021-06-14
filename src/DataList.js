@@ -1,13 +1,14 @@
 import React, { useState, useEffect } from 'react';
-
+import Moment from 'react-moment';
+import { PaperClipOutlined } from "@ant-design/icons";
 import Table from 'antd/lib/table';
 import 'antd/dist/antd.css';
 import './App.css';
 import data from './transactions.json'
 const DataList = () => {
     const [dataTrans, setDataTrans] = useState([]);
-
-  
+    
+     
     
     useEffect (()=>{
     
@@ -21,7 +22,11 @@ const DataList = () => {
           title: 'DD-MM-YYYY',
           dataIndex: 'created_at',
           key: 'created_at',
-          render: text => <a>{text}</a>,
+          sorter: {
+            compare: (a, b) => (new Date(a.created_at).valueOf()) - (new Date(b.created_at).valueOf()),
+            multiple: 1,
+          },
+          render: text => <Moment format="DD-MM-YYYY">{text}</Moment>,
         },
         {
           title: 'Counterparty Name',
@@ -34,10 +39,17 @@ const DataList = () => {
           key: 'operation_type',
         },
         {
-            title: 'Amount',
+          title: 'Amount',
+          dataIndex: 'amount',
+          key: 'amount',
+        },
+        {
+            title: <PaperClipOutlined />,
             dataIndex: 'amount',
             key: 'amount',
+            render: text => <a><PaperClipOutlined /> 1</a>,
           },
+          
       ];
 
   
@@ -48,7 +60,3 @@ const DataList = () => {
 }
 
 export default DataList;
-
-
-
-
