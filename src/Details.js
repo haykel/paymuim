@@ -9,8 +9,7 @@ const Details = (detailsItem) => {
     return (
         <div className="detailsSection">
         <PageHeader className="site-page-header-details"/>
-        <div className="detailsContainer">
-            
+        <div className="detailsContainer">       
         <Image
             width={200}
             src={detailsItem}
@@ -18,7 +17,6 @@ const Details = (detailsItem) => {
         </div>
        </div> 
     );
-  
 }
 
 export default Details;
