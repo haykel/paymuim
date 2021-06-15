@@ -6,7 +6,7 @@ import 'antd/dist/antd.css';
 import './App.css';
 import data from './transactions.json';
 
-
+// columns table
 const columns = [
   {
     title: 'DD-MM-YYYY',
@@ -41,7 +41,7 @@ const columns = [
     },
     
 ];
-
+// data from json 
 const dataTrans = data[0].transactions;
 
 class DataList extends React.Component {
