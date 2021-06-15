@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 
 import { Layout, Menu, PageHeader, Button, Divider  } from 'antd';
 import DataList from "./DataList";
@@ -8,7 +8,8 @@ import  Details  from "./Details";
 const { Header, Content, Sider } = Layout; 
 
 const LayoutApp = () => {
-  
+const [detailsItem, setDetailsItem] = useState();
+
     return (
       <div className="container">
         <Layout>
@@ -22,7 +23,6 @@ const LayoutApp = () => {
         >
           <div className="logo" >FINPAL</div>
           <Menu theme="dark" mode="inline" defaultSelectedKeys={['4']}>
-           
             <Menu.Item key="2">
               Overview
             </Menu.Item>
@@ -70,16 +70,15 @@ const LayoutApp = () => {
           <PageHeader className="site-page-header-layout"/>
             <div className="site-layout-background" style={{ padding: 24, textAlign: 'center' }}>
              
-             <DataList />
+             <DataList  />
             </div>
           </Content>
           
         </Layout>
       </Layout>
-      <Details />
+      <Details detailsItem={detailsItem} />
       </div>
     );
-  
 }
 
 export default LayoutApp;
