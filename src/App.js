@@ -5,16 +5,13 @@ import LayoutApp from "./LayoutApp";
 import 'antd/dist/antd.css';
 import './App.css';
 
-
-
-
 class App extends Component {
   render() {
     return (
       <>
-       <PageHeader className="site-page-header"/>
-      <LayoutApp />
-  </>
+        <PageHeader className="site-page-header"/>
+        <LayoutApp />
+      </>
     );
   }
 }
