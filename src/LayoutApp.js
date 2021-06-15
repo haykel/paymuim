@@ -1,18 +1,17 @@
 import React from 'react';
-import axios from 'axios';
+
 
 import { Layout, Menu, PageHeader, Button, Divider  } from 'antd';
 import DataList from "./DataList";
 import 'antd/dist/antd.css';
 import './App.css';
-import data from './transactions.json'
+import  Details  from "./Details";
 const { Header, Content, Sider } = Layout; 
 
 const LayoutApp = () => {
-
-
   
     return (
+      <div className="container">
         <Layout>
         <Sider
           style={{
@@ -31,8 +30,7 @@ const LayoutApp = () => {
             <Menu.Item key="3">
               Transactions (3)
             </Menu.Item>
-    
-            
+               
               <Divider dashed />
     
             <Menu.Item key="4">
@@ -42,7 +40,6 @@ const LayoutApp = () => {
              Invoices (1)
             </Menu.Item>
     
-            
               <Divider dashed />
     
             <Menu.Item key="6">
@@ -52,7 +49,6 @@ const LayoutApp = () => {
               Manage accounts
             </Menu.Item>
     
-            
               <Divider dashed />
     
             <Menu.Item key="8">
@@ -81,6 +77,8 @@ const LayoutApp = () => {
           
         </Layout>
       </Layout>
+      <Details />
+      </div>
     );
   
 }
