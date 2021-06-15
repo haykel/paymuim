@@ -7,14 +7,9 @@ import './App.css';
 import data from './transactions.json'
 const DataList = () => {
     const [dataTrans, setDataTrans] = useState([]);
-    
-     
-    
-    useEffect (()=>{
-    
-      setDataTrans(data[0].transactions);
-        
       
+    useEffect (()=>{   
+      setDataTrans(data[0].transactions);  
     })
     
     const columns = [
@@ -52,7 +47,6 @@ const DataList = () => {
           
       ];
 
-  
     return (
         <Table columns={columns} dataSource={dataTrans} />
     );
