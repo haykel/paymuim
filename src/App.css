@@ -99,3 +99,12 @@
     border-radius: 5px;
     font-size: 13px;
 }
+.container{
+  display: flex;
+}
+
+.detailsContainer{
+  background-color: #ffffff52;
+    padding: 350px 15px 35px 15px;
+    width: 300px;
+}
