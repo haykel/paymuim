@@ -40,8 +40,8 @@ const DataList = () => {
         },
         {
             title: <PaperClipOutlined />,
-            dataIndex: 'amount',
-            key: 'amount',
+            dataIndex: 'currency',
+            key: 'currency',
             render: text => <a><PaperClipOutlined /> 1</a>,
           },
           
