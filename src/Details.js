@@ -4,16 +4,19 @@ import { Image } from 'antd';
 import 'antd/dist/antd.css';
 import './App.css';
 
-const Details = () => {
+const Details = (detailsItem) => {
 
+    detailsItem = "https:\/\/fakeimg.pl\/200x320\/?text=Hello";
     return (
         <div className="detailsContainer">
         <Image
             width={200}
-            src="https:\/\/fakeimg.pl\/350x200\/?text=HellWorld"
+            src={detailsItem}
             />
-        </div>       
-    ); 
+        </div>
+        
+    );
+  
 }
 
 export default Details;
