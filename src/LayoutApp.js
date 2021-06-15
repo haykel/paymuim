@@ -9,7 +9,7 @@ const { Header, Content, Sider } = Layout;
 
 const LayoutApp = () => {
 const [detailsItem, setDetailsItem] = useState();
-
+    
     return (
       <div className="container">
         <Layout>
@@ -28,28 +28,22 @@ const [detailsItem, setDetailsItem] = useState();
             </Menu.Item>
             <Menu.Item key="3">
               Transactions (3)
-            </Menu.Item>
-               
-              <Divider dashed />
-    
+            </Menu.Item>              
+              <Divider dashed />  
             <Menu.Item key="4">
               Transfers (2)
             </Menu.Item>
             <Menu.Item key="5">
              Invoices (1)
-            </Menu.Item>
-    
+            </Menu.Item> 
               <Divider dashed />
-    
             <Menu.Item key="6">
               Manage cards
             </Menu.Item>
             <Menu.Item key="7">
               Manage accounts
-            </Menu.Item>
-    
+            </Menu.Item> 
               <Divider dashed />
-    
             <Menu.Item key="8">
               Team
             </Menu.Item>
@@ -69,11 +63,9 @@ const [detailsItem, setDetailsItem] = useState();
           <Content style={{ margin: '24px 16px 0', overflow: 'initial' }}>
           <PageHeader className="site-page-header-layout"/>
             <div className="site-layout-background" style={{ padding: 24, textAlign: 'center' }}>
-             
              <DataList  />
             </div>
-          </Content>
-          
+          </Content>         
         </Layout>
       </Layout>
       <Details detailsItem={detailsItem} />
