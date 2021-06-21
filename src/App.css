@@ -107,8 +107,10 @@
 
 .detailsContainer{
   background-color: #ffffff52;
-  padding: 130px 10px 10px 50px;
-  width: 280px;
+  padding: 70px 30px 10px 30px;
+  width: 350px;
+  overflow-y: scroll;
+  max-height: 620px;
 }
 
 .site-page-header-details {
@@ -123,4 +125,16 @@
 
 .incrise{
   color: darkgreen;
+}
+
+.listContainer{
+  text-align: center;
+    left: 250px;
+    top: 90px;
+    position: relative;
+}
+
+.ant-table-wrapper {
+  clear: both;
+  max-width: 60%;
 }

@@ -9,7 +9,7 @@ import { DetailsContext } from "../../Context/DetailsContext";
 const { Header, Content, Sider } = Layout;
 
 const LayoutApp = () => {
-  const [detailsItem, setDetailsItem] = useState('');
+  const [detailsItem, setDetailsItem] = useState([]);
 
   return (
     <DetailsContext.Provider value={{detailsItem, setDetailsItem}}>
@@ -50,8 +50,7 @@ const LayoutApp = () => {
           <Content style={{ margin: "24px 16px 0", overflow: "initial" }}>
             <PageHeader className="site-page-header-layout" />
             <div
-              className="site-layout-background"
-              style={{ padding: 24, textAlign: "center" }}
+              className="listContainer"
             >
               <DataList />
             </div>
